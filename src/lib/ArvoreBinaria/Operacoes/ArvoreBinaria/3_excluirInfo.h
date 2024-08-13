@@ -76,7 +76,7 @@ pNohArvore excluirInfoRecursivo(pNohArvore raiz, void *info, FuncaoComparacao fc
 int excluirInfo(pDArvore arvore, void *info, FuncaoComparacao pfc){
 
   if (arvore->raiz == NULL)
-        return NULL;
+        return 1;
 
     arvore->raiz = excluirInfoRecursivo(arvore->raiz, info, pfc);
     return 0;

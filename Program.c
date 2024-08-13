@@ -3,8 +3,6 @@
 #include "./src/Application.h"
 
 int main() {
-
-    Begin();
-    
-    return 0;
+    Menu();
+  return 0;
 }

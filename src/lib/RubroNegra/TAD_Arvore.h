@@ -41,5 +41,12 @@ void desenhaArvore(pDArvore, FuncaoImpressao);
 
 void recolorir(pNohArvore);
 
+// Benchmarking functions
+
+int* gerarDadoAleatorio(int size);
+double medirTempoInsercao(pDArvore arvore, int* data, int size);
+double medirTempoBusca(pDArvore arvore, int* data, int size);
+double medirTempoExclusao(pDArvore arvore, int* data, int size);
+
 #endif
 

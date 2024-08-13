@@ -1,15 +1,15 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-#include "Begin.h"
+#include <stdio.h>
+#include <stdlib.h>
 
+// Auxiliares
 
-// Arvores
+//#include "./lib/FilesLibrary/Persistencia.h"
 
-#include "./lib/RB_Tree_Lib/ArvoreRubroNegra.h"
-#include "./lib/AVL_Tree_Lib/ArvoreAVL.h"
-//#include "ABB_Tree_Lib/ArvoreBinaria.h"
-
+// Funcionalidades
+#include "./Menu.h"
 
 
 #endif // !APPLICATION_H

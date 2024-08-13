@@ -1,9 +1,5 @@
-#ifndef ARVORE_RUBRONEGRA_H
-#define ARVORE_RUBRONEGRA_H
-
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#ifndef ARVORE_AVL_H
+#define ARVORE_AVL_H
 
 #include "./TAD_Arvore.h"
 
@@ -16,7 +12,16 @@
 #include "./Operacoes/3_excluirInfo.h"
 #include "./Operacoes/4_buscarInfo.h"
 
+#include "./Operacoes/5_emOrdem.h"
+#include "./Operacoes/6_preOrdem.h"
+#include "./Operacoes/7_posOrdem.h"
+
+#include "./Operacoes/11_altura.h"
+#include "./Operacoes/10_quantidadeFolhas.h"
+
 #include "./Operacoes/12_desenhaArvore.h"
-#include "./PerformanceFunctions.h"
+
+#include "./Operacoes/13_balancear.h"
+#include "./Operacoes/14_recalcularFB.h"
 
 #endif
