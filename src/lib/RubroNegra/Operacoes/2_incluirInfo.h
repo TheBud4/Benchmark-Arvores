@@ -241,7 +241,7 @@ pNohArvore incluirInfoRecursivo(pNohArvore raiz, void *info, FuncaoComparacao pf
 /* ----------------------------------------------------------*/
 void incluirInfo(pDArvore arvore, void *info, FuncaoComparacao pfc){
 
-    printf("\n ----------- Incluindo info: %d ---\n", *((int*)info));
+    //printf("\n ----------- Incluindo info: %d ---\n", *((int*)info));
     arvore->raiz = incluirInfoRecursivo(arvore->raiz, info, pfc);
     arvore->raiz->cor = BLACK;
     arvore->quantidadeNohs++;

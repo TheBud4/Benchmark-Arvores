@@ -114,7 +114,7 @@ pNohArvore excluirInfoRecursivo(pNohArvore raiz, void *info, FuncaoComparacao fc
 /* ----------------------------------------------------------*/
 int excluirInfo(pDArvore arvore, void *info, FuncaoComparacao pfc){
 
-    printf("Excluindo...\n");
+    //printf("Excluindo...\n");
  
     arvore->raiz = excluirInfoRecursivo(arvore->raiz, info, pfc);
     return 0;

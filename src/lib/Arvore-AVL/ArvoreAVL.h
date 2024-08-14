@@ -1,6 +1,10 @@
 #ifndef ARVORE_AVL_H
 #define ARVORE_AVL_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 #include "./TAD_Arvore.h"
 
 #include "./Operacoes/0_struct_Arvore.h"
@@ -23,5 +27,5 @@
 
 #include "./Operacoes/13_balancear.h"
 #include "./Operacoes/14_recalcularFB.h"
-
+#include "./PerformanceFunctions.h"
 #endif

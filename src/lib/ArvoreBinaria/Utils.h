@@ -26,6 +26,10 @@ void* alocaInfoInt(void *info){
 int* alocaInt(int n){
    int *pi = (int *) malloc(sizeof(int));
    *pi = n;
+   if(pi == NULL){
+      printf("Erro de alocacao de memoria\n");
+      return NULL;
+   }
    return pi;
 }
 

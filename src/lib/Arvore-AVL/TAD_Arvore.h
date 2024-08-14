@@ -44,9 +44,11 @@ void desenhaArvore(pDArvore, FuncaoImpressao);
 void recalcularFB(pDArvore);
 void recalcularFB_Recursivo(pNohArvore);
 
-//Benchmarking functions
+// Benchmarking functions
 
-int *generateRandomData(int size);
-double measureInsertionTime(pDArvore arvore, int *data, int size);
+int *gerarDadoAleatorio(int size);
+double medirTempoInsercao(pDArvore arvore, int *data, int size);
+double medirTempoBusca(pDArvore arvore, int *data, int size);
+double medirTempoExclusao(pDArvore arvore, int *data, int size);
 
 #endif

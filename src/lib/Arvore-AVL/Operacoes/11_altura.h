@@ -6,7 +6,7 @@ int alturaRecursiva(pNohArvore raiz){
     if (raiz == NULL)
       return 0;
 
-    // é uma folha
+    // ï¿½ uma folha
     if (raiz->esquerda == NULL && raiz->direita == NULL)
        return 1;
 

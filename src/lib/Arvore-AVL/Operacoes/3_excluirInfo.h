@@ -6,10 +6,10 @@
 pNohArvore excluirInfoRecursivo(pNohArvore raiz, void *info,
                                 FuncaoComparacao pfc) {
   if (raiz == NULL) {
-    printf("raiz nula\n");
+    //printf("raiz nula\n");
     return raiz;
   }
-  printf("Passou aqui 1\n");
+  //printf("Passou aqui 1\n");
 
   // Caso 1 e 2 - Nó com nenhum ou 1 filho
   int comparacao = pfc(info, raiz->info);
@@ -83,7 +83,7 @@ pNohArvore excluirInfoRecursivo(pNohArvore raiz, void *info,
 
 /* ----------------------------------------------------------*/
 int excluirInfo(pDArvore arvore, void *info, FuncaoComparacao pfc) {
-  printf("Excluindo...\n");
+  //printf("Excluindo...\n");
   arvore->raiz = excluirInfoRecursivo(arvore->raiz, info, pfc);
   return 0;
 }

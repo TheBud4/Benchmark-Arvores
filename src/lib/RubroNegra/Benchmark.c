@@ -4,8 +4,7 @@
 #include "../Utils.h"
 #include "./ArvoreRubroNegra.h"
 
-
-int main(){
+int main() {
   int sizes[] = {1000, 10000, 100000, 1000000};
   int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
   printf(
@@ -20,20 +19,24 @@ int main(){
 
     pDArvore testArvore = criarArvore(sizeof(int));
 
-    // Medi��o do tempo de inser��o
+    // Medi��o do tempo de insercaoo
     double insertionTime = medirTempoInsercao(testArvore, data, size);
 
-    // Medi��o do tempo de busca
-    //double searchTime = medirTempoBusca(testArvore, data, size);
+    int* singleData = gerarDadoAleatorio(1);
 
-    // Medi��o do tempo de exclus�o
-   //double deletionTime = medirTempoExclusao(testArvore, data, size);
+    // Medicao do tempo de busca
+    double searchTime = medirTempoBusca(testArvore, singleData, 1);
 
-    printf("%18d | %18.6f | %15.6f | %18.6f\n", size, insertionTime/*, searchTime,
-           deletionTime*/);
+    // Medicao do tempo de exclusao
+    double deletionTime = medirTempoExclusao(testArvore, singleData, 1);
 
-    // Liberar mem�ria
+    printf("%18d | %18.6f | %15.6f | %18.6f\n", size, insertionTime, searchTime,
+           deletionTime);
+
+    // Liberar memoria
     free(data);
+    free(singleData);
+    free(testArvore);
   }
-    return 0;
-  }
+  return 0;
+}

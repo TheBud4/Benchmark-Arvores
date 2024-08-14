@@ -19,12 +19,20 @@ void imprimeInt(void *info){
 /* ---------------------------------------- */
 void* alocaInfoInt(void *info){
    int * pi = (int *) malloc(sizeof(int));
+   if (pi == NULL) {
+     printf("Erro de alocacao\n");
+     return NULL;
+   }
    *pi = *((int*)info);
    return pi;
 }
 /* ---------------------------------------- */
 int* alocaInt(int n){
    int *pi = (int *) malloc(sizeof(int));
+   if (pi == NULL) {
+     printf("Erro de alocacao\n");
+     return NULL;
+   }
    *pi = n;
    return pi;
 }
